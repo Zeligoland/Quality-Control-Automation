@@ -22,9 +22,9 @@ Algoritmo ejCoop_guia2y3_maquinaReciclaje
 	// Usuario y Contraseña
 	Definir login Como Logico
 	Definir usuario, contrasena Como Caracter	
-	Definir intentos, opcMenu como Entero
+	Definir intentos, opcMenu, numBotellas, i, peso, valorBotellas como Entero
 	
-	login = Falso
+	login = Verdadero
 	intentos = 3
 	
 	Hacer 
@@ -67,9 +67,30 @@ Algoritmo ejCoop_guia2y3_maquinaReciclaje
 		
 		Leer opcMenu
 		
+		valorBotellas = 0
+		
 		Segun opcMenu
 			
-			1 : Escribir 'Ingresar Botellas'
+			1 : Escribir '¿Cuántas botellas ingresarás?'
+				Leer numBotellas
+				
+				para i = 1 Hasta numBotellas Hacer
+					peso = aleatorio(100, 3000)
+					Escribir 'Botella ', i, ': ', peso, ' gr'
+					
+					//Aquí se puede utilizar un condicional según
+					si peso < 500 Entonces
+						valorBotellas = valorBotellas + 50
+					SiNo Si peso >= 501 y peso <= 1500 Entonces
+							valorBotellas = valorBotellas + 125
+						SiNo Si peso >= 1501 Entonces
+								valorBotellas = valorBotellas + 200
+							FinSi
+						FinSi						
+					FinSi					
+				FinPara
+				
+				Escribir 'Te ofrecemos $', valorBotellas, ' por las ', numBotellas, ' botellas ingresadas.'
 			2 : Escribir 'Consultar Saldo'
 			3 : Escribir '¡Gracias por tu visita!' 
 			
