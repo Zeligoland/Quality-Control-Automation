@@ -1,3 +1,17 @@
+Algoritmo ejGuia1_funcionSumaDivisores
+//	Realizar una función que calcule y retorne la suma de todos los divisores del número n distintos de n.
+	//	El valor de n debe ser ingresado por el usuario.
+	Definir n, resultado Como Entero
+	
+	Escribir 'Ingrese un número'
+	Leer n
+	
+	resultado = SumaDivisores(n)
+	
+	Escribir 'La suma de todos los divisores del número ', n, ' distintos de ', n, ' es: ' resultado
+	
+FinAlgoritmo
+
 Funcion suma <- SumaDivisores (n)
 	Definir suma, div, i Como Entero
 	
@@ -13,20 +27,5 @@ Funcion suma <- SumaDivisores (n)
 	FinPara	
 	
 	suma = suma
-		
+	
 Fin Funcion
-
-
-Algoritmo ejGuia1_funcionSumaDivisores
-//	Realizar una función que calcule y retorne la suma de todos los divisores del número n distintos de n.
-	//	El valor de n debe ser ingresado por el usuario.
-	Definir n Como Entero
-	
-	Escribir 'Ingrese un número'
-	Leer n
-	
-	
-	
-	Escribir 'La suma de todos los divisores del número ', n, ' distintos de ', n, ' es: ' SumaDivisores(n)
-	
-FinAlgoritmo
