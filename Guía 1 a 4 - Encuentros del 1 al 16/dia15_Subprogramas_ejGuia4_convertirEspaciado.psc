@@ -16,9 +16,9 @@ FinAlgoritmo
 
 SubProceso convertirEspaciado(txt Por Referencia)
 	Definir i Como Entero
-	Definir letra, cadenaEspaciada Como Caracter
+	Definir letra, cadenaEspaciada Como Caracter	
 	
-	cadenaEspaciada = ''
+	cadenaEspaciada = ''	
 	
 	Para i=0 Hasta Longitud(txt) Hacer
 		letra = Subcadena(txt, i, i)
