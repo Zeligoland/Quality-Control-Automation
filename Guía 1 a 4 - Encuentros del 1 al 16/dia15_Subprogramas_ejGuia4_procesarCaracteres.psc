@@ -10,8 +10,7 @@ Algoritmo dia15_Subprogramas_ejGuia4_procesarCaracteres
 	Escribir 'Ingrese una secuencia de caracteres terminada por un punto.'
 	Leer secuenciaOriginal
 	
-	Escribir procesarCaracteres(secuenciaOriginal)	
-	
+	Escribir procesarCaracteres(secuenciaOriginal)		
 FinAlgoritmo
 
 SubProceso codificacion(letra Por Referencia)
@@ -24,8 +23,7 @@ SubProceso codificacion(letra Por Referencia)
 			
 		'o', 'O': letra = '%'
 			
-		'u', 'U': letra = '*'
-			
+		'u', 'U': letra = '*'			
 	FinSegun		
 FinSubProceso
 
@@ -39,7 +37,5 @@ Funcion secuenciaModificada <- procesarCaracteres(secuencia)
 		letra = Subcadena(secuencia, i, i)
 		codificacion(letra)	
 		secuenciaModificada = secuenciaModificada + letra
-	FinPara
-	
-		
+	FinPara		
 FinFuncion
