@@ -1,25 +1,20 @@
 Algoritmo vocalesRepetidas
-	
-//Diseñar un procedimiento que reciba una frase, y el programa remueva todas las vocales repetidas. Al final el procedimiento mostrará la frase final.
-	Definir frase Como Caracter
-	
+// Diseñar un procedimiento que reciba una frase, y el programa remueva todas las vocales repetidas. Al final el procedimiento mostrará la frase final.
+	Definir frase Como Caracter	
 	Escribir 'Ingrese una frase, el programa removerá todas las vocales repetidas'
-	Leer frase
-	
+	Leer frase	
 	elimVocalesRepetidas(frase)	
 FinAlgoritmo
 
 SubProceso elimVocalesRepetidas(fr) 
 	Definir i, contA, contE, contI, contO, contU Como Entero	
-	Definir letra, nuevaCadena Como Caracter
-	
+	Definir letra, nuevaCadena Como Caracter	
 	contA = 0
 	contE = 0
 	contI = 0
 	contO = 0
 	contU = 0
-	nuevaCadena = ''
-	
+	nuevaCadena = ''	
 	Para i = 0 Hasta Longitud(fr) Hacer
 		letra = Subcadena(fr, i, i)
 		Segun letra 
@@ -45,8 +40,6 @@ SubProceso elimVocalesRepetidas(fr)
 				FinSi
 		FinSegun			
 		nuevaCadena = nuevaCadena + letra
-	FinPara
-	
-	Escribir nuevaCadena
-	
+	FinPara	
+	Escribir nuevaCadena	
 FinSubProceso
