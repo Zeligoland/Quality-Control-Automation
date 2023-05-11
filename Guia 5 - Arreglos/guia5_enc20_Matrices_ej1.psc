@@ -12,15 +12,10 @@ Algoritmo guia5_enc20_Matrices_ej1
 			Leer matriz[i,j]
 		FinPara
 	FinPara
-	
-	
 	Para i = 0 Hasta 2 Hacer
 		Para j = 0 Hasta 2 Hacer
 			Escribir Sin Saltar matriz[i,j], ' '
 		FinPara
 		Escribir ''
-	FinPara
-	
-	
-	
+	FinPara	
 FinAlgoritmo
