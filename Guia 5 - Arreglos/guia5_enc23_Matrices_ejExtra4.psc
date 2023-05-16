@@ -49,8 +49,6 @@ SubProceso multiplicarMatrices(matriz1, matriz2, matrizRes, fil, col)
 		Para j=0 Hasta col-1 Con Paso 1 Hacer
 			matrizRes[i,j] = matriz1[i,j] * matriz2[i,j]
 		FinPara		
-	FinPara	
-	
-	
+	FinPara		
 FinSubProceso
 	
