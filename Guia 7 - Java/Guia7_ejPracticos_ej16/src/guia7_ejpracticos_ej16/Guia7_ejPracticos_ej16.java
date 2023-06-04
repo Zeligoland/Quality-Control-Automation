@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package guia7_ejpracticos_ej16;
+
 import java.util.Scanner;
 
 /**
@@ -27,12 +28,12 @@ public class Guia7_ejPracticos_ej16 {
 
         fillVector(vector, size);
         printVector(vector, size);
-        
+
         System.out.println("¿Qué número desea buscar?");
         int num = read.nextInt();
-        
+
         searchNum(vector, size, num);
-        
+
     }
 
     public static void fillVector(int[] v, int s) {
@@ -43,19 +44,31 @@ public class Guia7_ejPracticos_ej16 {
     }
 
     public static void printVector(int[] v, int s) {
-        
+
         System.out.println("El vector, de tamaño " + s + " es: ");
-        
+
         for (int i = 0; i < s; i++) {
             System.out.print("[" + v[i] + "]");
-        }     
+        }
+
+        System.out.println(" ");
     }
+
     public static void searchNum(int[] v, int s, int n) {
-        
+
+        int cont = 0;
+
         for (int i = 0; i < s; i++) {
-            if(v[i] == n) {
-                
+            if (v[i] == n) {
+                cont = cont + 1;
+                System.out.println("El número que buscas se encuentra en la posición: " + "[" + i + "]");
             };
-        }     
+        }
+
+        if (cont >= 1) {
+            System.out.println("En total, el número ingresado se encuentra en el vector " + cont + " veces.");
+        } else {
+            System.out.println("El número que buscas no se encuentra en el vector");
+        }
     }
 }
